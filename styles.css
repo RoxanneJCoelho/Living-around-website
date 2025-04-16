@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Jura", serif;
+    margin-top: 30px;
+    margin-right: 80px;
+  }
+
+.nav-link{
+    color: #1e1e1e;
+    font-weight: 600;
+    
+}
+.nav-item {
+    margin: 0 35px;
+}
+  
+.titulo h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Josefin Slab", serif;
+    font-weight: 700;
+    font-size: 6vw;
+  }
+.parte1{
+    background-color: rgba(180, 155, 44, 0.25)
+      }
+.viva-livre h2{
+    font-family: "Jura", serif;
+    letter-spacing: 4px;
+    justify-content: center;
+}
+.trabalho-remoto h3{
+    font-family: "Jura", serif;
+
+}
