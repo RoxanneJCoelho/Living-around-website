@@ -8,22 +8,18 @@
     position: relative;
 }
 
-.nav {
+.navbar-transparent {
     position: absolute;
-    top: 0;
-    right: 0;
-    font-family: "Jura", serif;
-    margin-top: 30px;
-    margin-right: 80px;
-  }
-
-.nav-link{
-    color: #1e1e1e;
-    font-weight: 600;
-    
+    top: 2vw;
+    right: 5vw;
 }
-.nav-item {
-    margin: 0 35px;
+
+.nav-link {
+    font-weight: 800;
+    font-family: "Jura", serif;
+    margin: 0 clamp(20px, 5vw, 40px);
+    font-size: 1.5vw;
+    color: #1e1e1e;  /* Ajuste o valor conforme desejado */
 }
   
 .titulo h1{
@@ -36,6 +32,11 @@
     font-weight: 700;
     font-size: 6vw;
   }
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
 .parte1{
     background-color: rgba(180, 155, 44, 0.25)
       }
@@ -43,8 +44,30 @@
     font-family: "Jura", serif;
     letter-spacing: 4px;
     justify-content: center;
+
 }
 .trabalho-remoto h3{
     font-family: "Jura", serif;
 
+}
+
+.centralizado {
+    display: flex;
+    flex-direction: column;  /* Para alinhar verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    height: 100%;            /* Garante que a coluna tenha altura suficiente */
+  }
+  
+.imagem-container {
+    position: relative;
+}
+
+.blog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: "Josefin Slab", serif;
 }
