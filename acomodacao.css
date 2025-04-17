@@ -55,6 +55,39 @@
     left: 5vw;
     cursor: pointer;
 }
+/* Fundo amarelo para o main */
+.conteudo-acomodacao {
+    background-color: #fffacd; /* Amarelo claro */
+    padding: 20px; /* Espaçamento interno para não colar nas bordas */
+}
+.conteudo-acomodacao .col {
+    padding: 15px; /* Espaçamento interno */
+}
+
+.conteudo-acomodacao .col > div {
+    background-color: #f0f0f0; /* Cinza claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    height: 100%; /* Para ocupar toda a altura da col */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para profundidade */
+}
+
+.conteudo-acomodacao .col img {
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+    margin-top: 10px; /* Espaço entre o texto e a imagem */
+    max-height: 200px; /* Altura máxima para as imagens */
+    width: auto; /* Largura automática para manter proporção */
+    display: block; /* Para centralizar */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteudo-acomodacao .col p {
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 10px; /* Espaço abaixo do texto */
+    text-align: center; /* Centralizar texto */
+}
+
 
 .footer {
     height: auto;
