@@ -13,7 +13,7 @@
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
     <!-- link para o ficheiro css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- link para a letra josefin slab -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
@@ -89,42 +89,62 @@
                     </div>
                 </div>
             </div>            
-            <div class="row">
-              <div class="col-5">
-                <img src="imagens_figma/caravana azul.png" alt="caravana azul" class="img-fluid">
+            <div class="row g-0">
+              <div class="col-5 p-0">
+                <img src="imagens_figma/caravana azul.png" alt="caravana azul" class="img-fluid w-100">
               </div>
-              <div class="col-7">
+              <div class="col-7 p-0">
+                <a href="#top">
+                    <img class="arrow-up-1" src="icons/Arrow_Up.png" alt="arrow-up-1">
+                </a>
                     <div class="centralizado">
                       <h3>Descubra o seu novo escritório</h3>
-                      <button class="btn btn-primary">Descobrir</button>
+                      <a href="acomodacao.html">
+                        <button class="botao descobrir">Descobrir</button>                        
+                      </a>
                     </div>               
               </div>
             </div>
             <div class="row">
-                <div class="col-7">
+                <div class="col position-relative"> <!-- aqui colocamos position-relative -->
                     <div class="centralizado">
-                        <h3>temos destinos especiais para você</h3>
-                        <button class="btn btn-primary">Explorar</button>
-                    </div> 
+                        <h3>Temos destinos especiais para você</h3>
+                        <a href="acomodacao.html">
+                            <button class="botao explorar">Explorar</button>
+                        </a>
+                    </div>
+                    <a href="#top">
+                        <img src="icons/Arrow_Up.png" alt="arrow-up" class="arrow-up-2">
+                    </a>
                 </div>
-                <div class="col-5">
-                  <img src="imagens_figma/floresta.png" alt="floresta" class="img-fluid">
+            
+                <div class="col">
+                    <img src="imagens_figma/floresta.png" alt="floresta" class="img-fluid">
                 </div>
-              </div>
+            </div>            
             <div class="row">
                 <div class="imagem-container">
                     <img src="imagens_figma/telemovel.png" alt="telemóvel" class="img-fluid">
-                    <button class ="blog">
-                        Blog
-                    </button>                 
+                    <button class =" botao blog">
+                        BLOG
+                    </button>
+                    <a href="#top">
+                        <img src="icons/Arrow_Up.png" alt="arrow-up" class="arrow-up-3">
+                    </a>             
                 </div>
               </div>
           </div>
     </main>
-    
+
     <!-- rodapé -->
-    <footer>
-        <h3>Living around</h3>
+    <footer class="footer">
+        <h3>LIVING AROUND</h3>
+        <div class="social-icons">
+            <img src="icons/Vector-fb.png" alt="Facebook">
+            <img src="icons/Vector-ins.png" alt="Instagram">
+            <img src="icons/Vector-x.png" alt="X">
+        </div>
+        <p>Power by Cesae Digital</p>
     </footer>
 
 </body>

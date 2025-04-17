@@ -13,7 +13,7 @@
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
     <!-- link para o ficheiro css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="acomodacao.css">
 
     <!-- link para a letra josefin slab -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
@@ -35,27 +35,39 @@
             <!-- a class img-fluid ajuda a imagem a adaptar-se ao tamanho da coluna -->
             <img src="imagens_figma/caravana laranja.png" alt="caravana laranja" class="img-fluid">
         </div>
+
+        <!-- div do botao de inicio -->
+         <div class = "botao-inicio">
+          <img src="icons/botao-inicio.png" alt="botao-inicio">
+         </div>
     
-        <!-- div da nav -->
-        <div class = "navegacao">
-            <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="acomodacao.html">Acomodação</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="locais.html">Locais</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contato.html">Contactos</a>
-                  </li>                       
-              </ul>
-        </div>
+        <!-- div da navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="acomodacao.html">ACOMODAÇÃO</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="locais.html">LOCAIS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">BLOG</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contato.html">CONTATOS</a>
+                      </li>                       
+                  </ul>
+              </div>
+          </div>
+      </nav>
         <!-- div do titulo -->
         <div class = "titulo">
-            <h1>O seu novo office</h1>
+            <h1>O SEU NOVO OFFICE</h1>
         </div>
     </header>
 
@@ -102,8 +114,16 @@
             </div>
           </div>
     </main>
+    
+    
     <!-- rodapé -->
-    <footer>
-        <h3>Living around</h3>
-    </footer>
+    <footer class="footer">
+      <h3>LIVING AROUND</h3>
+      <div class="social-icons">
+          <img src="icons/Vector-fb.png" alt="Facebook">
+          <img src="icons/Vector-ins.png" alt="Instagram">
+          <img src="icons/Vector-x.png" alt="X">
+      </div>
+      <p>Power by Cesae Digital</p>
+  </footer>
 
