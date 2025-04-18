@@ -94,7 +94,7 @@
     font-size: clamp(0.85rem, 1.8vw, 1.4rem);
     padding: clamp(0.7rem, 1vw, 1.5rem) clamp(1rem, 10vw, 5rem);
     width: clamp(8rem, 25vw, 16rem);
-    border-radius: clamp(15px, 4vw, 35px);
+    border-radius: clamp(0.95rem, 4vw, 2.25rem);
     cursor: pointer;
 }
 .descobrir {

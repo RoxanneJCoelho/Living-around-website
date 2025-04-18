@@ -32,7 +32,7 @@
 
         <!-- div da imagem do cabeçalho -->
         <div class = "imagem-cabecalho"> 
-            <!-- a class img-fluid ajuda a imagem a adaptar-se ao tamanho da coluna -->
+            <!-- a class img-fluid ajuda a imagem a adaptar-se ao tamanho da div -->
             <img src="imagens_figma/caravana laranja.png" alt="caravana laranja" class="img-fluid">
         </div>
 
@@ -67,90 +67,173 @@
               </div>
           </div>
       </nav>
+
         <!-- div do titulo -->
         <div class = "titulo">
             <h1>O SEU NOVO OFFICE</h1>
         </div>
-    </header>
+    </header> 
 
     <!-- main: vai ser uma grid de 2linhas*3colunas -->
-    <main class = "conteudo-acomodacao">
-        <div class="container">
-            <div class="row row-cols-2">
-              <div class="col">
-                <div class = "hippie-ride">
-                    <img src="imagens_figma/hippie-ride.png" alt="hippie ride" class="img-fluid">
-                    <h2>Hippie Ride</h2>
-                    <p>A partir de 50€/dia</p>
-                    <p>Equipada com: </p>
-                        <ul>
-                            <li>
-                            Cozinha equipada
-                            </li>
-                            <li>
-                            Cama de casal
-                            </li>
-                            <li>
-                            WC portátil
-                            </li>
-                            <li>
-                            Carregador USB
-                            </li>
-                        </ul>
-                        <!-- link para o modal -->
-                        <p><a role="button" data-bs-toggle="modal" data-bs-target=".modal">+info</a>
-                </div>
-              </div>
-              <div class="col">
-                <div class = "harvest-ride">
-                    <p>harvest ride</p>
-                    <img src="imagens_figma/harvest-ride.png" alt="harvest ride" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class = "nomade-ride">
-                    <p>nomade ride</p>
-                    <img src="imagens_figma/nomade-ride.png" alt="nomade ride" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class = "family-ride">
-                    <p>family ride</p>
-                    <img src="imagens_figma/family-ride.png" alt="family ride" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class = "surf-ride">
-                    <p>surf ride</p>
-                    <img src="imagens_figma/surf-ride.png" alt="surf ride" class="img-fluid">
-                </div>
-              </div>
-              <div class="col">
-                <div class = "cave-ride">
-                    <p>cave ride</p>
-                    <img src="imagens_figma/cave ride.png" alt="cave ride" class="img-fluid">
-                </div>
-              </div>
-            </div>
+    <main class="caravana">
+      <div class="row row-cols-2">
+        <div class="col">
+          <div class="container-caravana">
+            <img src="imagens_figma/hippie-ride.png" alt="hippie ride" class="img-fluid">
+            <h2>Hippie Ride</h2>
+            <p>A partir de 50€/dia</p>
+            <p>Equipada com: </p>
+            <ul>
+              <li>Cozinha equipada</li>
+              <li>Cama de casal</li>
+              <li>WC portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <!-- link para o modal -->
+            <p><a role="button" data-bs-toggle="modal" data-bs-target=".modal">+info</a></p>
           </div>
+        </div>
+    
+        <div class="col">
+          <div class="container-caravana">
+            <img src="imagens_figma/harvest-ride.png" alt="harvest ride" class="img-fluid">
+            <h2>Harvest Ride</h2>
+            <p>A partir de 80€/dia</p>
+            <p>Equipada com: </p>
+            <ul>
+              <li>Cozinha equipada</li>
+              <li>Cama de casal</li>
+              <li>WC portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <!-- os restantes +info remetem para a pagina de blog.html: uma pagina em manutencao -->
+            <p><a href="blog.html">+info</a></p>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="container-caravana">
+            <img src="imagens_figma/nomade-ride.png" alt="nomade ride" class="img-fluid">
+            <h2>Nomade Ride</h2>
+            <p>A partir de 100€/dia</p>
+            <p>Equipada com: </p>
+            <ul>
+              <li>Cozinha equipada</li>
+              <li>Cama de casal</li>
+              <li>WC portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <p><a href="blog.html">+info</a></p>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="container-caravana">
+            <img src="imagens_figma/family-ride.png" alt="family ride" class="img-fluid">
+            <h2>Family Ride</h2>
+            <p>A partir de 50€/dia</p>
+            <p>Equipada com: </p>
+            <ul>
+              <li>Cozinha equipada</li>
+              <li>Cama de casal</li>
+              <li>WC portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <p><a href="blog.html">+info</a></p>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="container-caravana">
+            <img src="imagens_figma/surf-ride.png" alt="surf ride" class="img-fluid">
+            <h2>Surf Ride</h2>
+            <p>A partir de 60€/dia</p>
+            <p>Equipada com: </p>
+            <ul>
+              <li>Cozinha equipada</li>
+              <li>Cama de casal</li>
+              <li>WC portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <p><a href="blog.html">+info</a></p>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="container-caravana">
+            <img src="imagens_figma/cave ride.png" alt="cave ride" class="img-fluid">
+            <h2>Cave Ride</h2>
+            <p>A partir de 30€/dia</p>
+            <p>Equipada com: </p>
+            <ul>
+              <li>Cozinha equipada</li>
+              <li>Cama de casal</li>
+              <li>WC portátil</li>
+              <li>Carregador USB</li>
+            </ul>
+            <p><a href="blog.html">+info</a></p>
+          </div>
+        </div>
+      </div>
     </main>
+    
+    
 
-    <!-- modal -->
-    <div class="modal" tabindex="-1" id="meuModal">
+    <!-- modal : no header tem uma foto da caravana, no body a descrição da mesma e no footer o botao alugar-->
+    <div class="modal" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
                 <img src="imagens_figma/hippie-ride.png" alt="hippie ride" class="img-fluid">
-                <h5 class="modal-title">Hippie Ride</h5>
+                <h2 class="modal-title">Hippie Ride</h2>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <p>
-                Imagine acordar com o som das ondas na praia, estacionar à beira de uma floresta serena ou partir numa viagem espontânea sem preocupações com hotéis ou horários.
+                Imagine acordar com o som das ondas na praia, estacionar à beira de uma floresta serena ou partir numa viagem espontânea sem preocupações com hotéis ou horários. Alugar uma carrinha adaptada é sinónimo de liberdade, conforto e aventura - tudo em um só lugar!
+              </p>
+              <p>
+                A nossa carrinha é a solução perfeita para viajantes que buscam autonomia e praticidade, sem abrir mão do essencial.
+              </p>
+              <p>
+                Por apenas 50€ por dia, você tem um lar sobre rodas totalmente equipado para tornar sua viagem inesquecível:
+              </p>
+              <ul class="certos">
+                <li>
+                  Cozinha completa - Prepare suas refeições favoritas a qualquer momento.
+                </li>
+                <li>
+                  Cama de casal confortável - Descanse com todo o espaço que precisa.
+                </li>
+                <li>
+                  WC portátil - Privacidade e conveniência onde quer que vá.
+                </li>
+                <li>
+                  Carregador USB - Mantenha seus dispositivos sempre prontos para uso
+                </li>
+              </ul>
+                <p>
+                  Por que escolher a nossa carrinha?
+                </p>
+              <ul>
+                <li>
+                  Economia: Mais barato que hotéis e com total flexibilidade.
+                </li>
+                <li>
+                  Conforto: Tudo o que você precisa em um espaço compacto e bem organizado.
+                </li>
+                <li>
+                  Aventura personalizada: Viaje no seu ritmo, pare onde quiser e crie memórias únicas.
+                </li>
+              </ul>
+              <p>
+                Seja para um fim de semana romântico, uma escapada em família ou uma viagem solo cheia de descobertas, a nossa carrinha está pronta para ser a sua companheira de estrada. Reserve já e transforme qualquer destino em casa!
               </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Alugar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                <a href="blog.html">Alugar</a>
+              </button>
             </div>
           </div>
         </div>
@@ -159,12 +242,26 @@
     
     <!-- rodapé -->
     <footer class="footer">
+      
+      <!-- titulo do rodapé -->
       <h3>LIVING AROUND</h3>
+
+      <!-- div para os icons das redes sociais, ao carregar neles irá aparecer as redes sociais da cesae -->
       <div class="social-icons">
-          <img src="icons/Vector-fb.png" alt="Facebook">
-          <img src="icons/Vector-ins.png" alt="Instagram">
-          <img src="icons/Vector-x.png" alt="X">
-      </div>
+        <a href="https://www.facebook.com/CesaeDigital/?locale=pt_PT" target="_blank" alt="facebook">
+            <img src="icons/Vector-fb.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/cesae.digital/" target="_blank" alt="instagram">
+            <img src="icons/Vector-ins.png" alt="instagram">
+        </a>
+        <a href="https://x.com/cesaePT" target="_blank" alt="x">
+            <img src="icons/Vector-x.png" alt="x">
+        </a>
+    </div>
+
+        <!-- paragrafo do rodapé -->
       <p>Power by Cesae Digital</p>
   </footer>
 
+</body>
+</html>

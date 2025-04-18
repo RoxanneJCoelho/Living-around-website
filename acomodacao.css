@@ -1,129 +1,158 @@
+/* Ficheiro css da página da acomodação do trabalho individual de programação web */
+/* NOME: Roxanne João Coelho */
+
+/* seletor universal: retira a margem e o padding e coloca o modelo de bordex-box, 
+que faz com que as dimensoes totais dum elemento incluam margem e padding  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos do cabeçalho */
+/* cabecalho: posição relativa, o que é bom para depois poder posicionar os seus elementos filhos 
+e width 100% para ocupar toda a largura da div */
 .cabecalho {
     position: relative;
     width: 100%;
 }
 
-/* Estilos da imagem do cabeçalho */
+/* imagem do cabeçalho: tem uma largura de 100% em relaçao ao elemento pai para melhor responsividade 
+e poe a altura automaticamente em relacao á largura para não distorcer */
 .imagem-cabecalho img {
     width: 100%;
     height: auto;
 }
 
-/* Centralizar o título dentro do cabeçalho */
+/* titulo do cabeçalho: tem que estar no meio do cabeçalho (top e left 50%, e mais um ajuste do transform), 
+centralizado (text-align: center) 
+e com uma faixa preta que ocupe a largura toda do elemento pai (width:100%) */
 .titulo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; /* Garante que o título fique centralizado */
-    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: center;
+    width: 100%; 
 }
 
-/* Estilos do título */
+/* estilos do título: cor branca, fonte Jura, a negrito (bold), font-size e padding com um tamanho responsivo
+o vw é Viewport Width, ou seja, por exemplo 1vw = 1% da largura visível da janela do navegador */
 .titulo h1 {
     color: white;
     font-family: "Josefin Slab", serif;
-    font-weight: 700;
-    font-size: 6vw; /* Tamanho da fonte responsivo */
-    white-space: nowrap; /* Impede que o texto quebre em mais de uma linha */
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 0.75rem; /* Padding padrão em rem */
+    font-weight: bold;
+    font-size: 6vw; 
+    white-space: nowrap; /* faz com que o titulo fique sempre numa linha e não quebre de linha */
+    background-color: rgba(0, 0, 0, 0.85); /* faixa preta transparente ao longo da largura do cabecalho */
+    padding: 2vw;
 }
+
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva */
 .navbar-transparent {
     position: absolute;
     top: 2vw;
     right: 5vw;
 }
 
+/* letras da navbar: preto, negrito, com a fonte Josefin Slab, 
+margem superior e inferior 0, esquerda e direita 5vW para dar um certo espaco entre as palavras 
+e font size de tamanho responsivo*/
 .nav-link {
-    font-weight: 800;
+    color: black;
+    font-weight: bold;
     font-family: "Josefin Slab", serif;
-    margin: 0 clamp(20px, 5vw, 40px);
-    font-size: 1.5vw;
-    color: black;  /* Ajuste o valor conforme desejado */
+    margin: 0 5vw; 
+    font-size: 1.5vw;  
 }
+
+/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva
+o cursor: pointer faz com que seja clicável ao passar com o rato */
 .botao-inicio{
     position: absolute;
     top: 2vw;
     left: 5vw;
     cursor: pointer;
 }
-/* Fundo amarelo para o main */
-.conteudo-acomodacao {
-    background-color: #fffacd; /* Amarelo claro */
-    padding: 20px; /* Espaçamento interno para não colar nas bordas */
-}
-.conteudo-acomodacao .col {
-    padding: 15px; /* Espaçamento interno */
+
+/* main: definir cor de fundo amarela com 25% transparência com um certo espacamento responsivo*/
+.caravana {
+    background-color:  rgba(180, 155, 44, 0.25);
+    padding: 3vw 5vw;
 }
 
-.conteudo-acomodacao .col > div {
-    background-color: #f0f0f0; /* Cinza claro */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno */
-    height: 100%; /* Para ocupar toda a altura da col */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para profundidade */
+/* espaçamento para as colunas */
+.col{
+    padding: 2vw;
 }
 
-.conteudo-acomodacao .col img {
-    border-radius: 8px; /* Bordas arredondadas para a imagem */
-    margin-top: 10px; /* Espaço entre o texto e a imagem */
-    max-height: 200px; /* Altura máxima para as imagens */
-    width: auto; /* Largura automática para manter proporção */
-    display: block; /* Para centralizar */
-    margin-left: auto;
-    margin-right: auto;
+/* estilos para o container-caravana como para o modal-content:
+mesmo espacamento, cor de fundo, bordas arredondadas responsivas e uma sombra a direita e em baixo */
+.container-caravana, .modal-content {
+    padding: 2vw;
+    background-color: #dfdfdf; 
+    border-radius: 2vw;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+/* estilos para as imagens do container-caravana como a imagem do modal:
+ o display black e margin 0 auto centraliza a imagem e a deixa no topo, 
+ width para ajustar a largura responsivamente e as bordas arredondadas */
+.container-caravana img, .modal-header img{
+    display: block;
+    margin: 0 auto;
+    width: 80vw;
+    border-radius: 2vw;
 }
 
-.conteudo-acomodacao .col h2 {
-    font-weight: bold; /* Texto em negrito */
-    margin-bottom: 10px; /* Espaço abaixo do texto */
-    text-align: center; /* Centralizar texto */
+/* para os titulos: negrito com uma margem mais reforçada em baixo e texto centrado, com a fonte Jura e preto*/
+.container-caravana h2, .modal-title {
+    font-weight: bold;
+    padding: 1vw;
+    margin-bottom: 1vw; 
+    text-align: center; 
     font-family: "Jura", serif;
-}
-.conteudo-acomodacao .col p, ul{
-    font-family: "Jura", serif;    
+    color: black;
 }
 
-#meuModal .modal-content {
-    background-color: #dfdfdf;
-    border-radius: 15px;
-    overflow: hidden;
+/* para os paragrafos e listas: preto com fonte Jura */
+.container-caravana p, ul, .modal-body p{
+    color: black;
+    font-family: "Jura", serif;   
 }
 
-#meuModal .modal-header {
+/*para centralizar o +info e garantir que ele fique no fundo da celula*/
+.container-caravana p:last-child {
+    text-align: center; 
+    margin: auto 0; 
+}
+
+/* estilos para a imagem de fundo do modal: colocar a imagem nao cortada (cover) e centrada (center) */
+.modal-backdrop {
+    background-image: url("imagens_figma/caravana laranja.png");
+    background-size: cover;
+    background-position: center; 
+    opacity: 1 !important; /*força a opacidade total, evitando com que o fundo da pagina das caravanas se veja*/
+}
+
+.modal-backdrop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.modal-dialog {
+    max-width: 60vw;
+    margin: 2vw auto; /* mantém o modal centrado */
+}
+.modal-header {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 10px 0;
     border-bottom: none;
 }
 
-#meuModal .modal-header img {
-    width: calc(100% - 20px);
-    margin: 10px;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-#meuModal .modal-title {
-    margin: 15px 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-}
-
-#meuModal .btn-close {
+.btn-close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -133,43 +162,43 @@
     z-index: 1;
 }
 
-#meuModal .btn-close:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-}
 
-#meuModal .modal-body {
-    text-align: center;
-    padding: 0 20px 20px;
-}
-
-#meuModal .modal-body p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-#meuModal .modal-footer {
+.modal-footer {
     display: flex;
     justify-content: center;
     border-top: none;
     padding: 0 20px 20px;
 }
 
-#meuModal .btn-secondary {
-    background-color: #28a745;
-    color: white;
+.btn-secondary {
+    background-color: #686931;
+    color: black;
     border: none;
-    padding: 10px 30px;
-    font-size: 1.1rem;
-    border-radius: 5px;
+    margin-top: clamp(1rem, 4vh, 3rem);
+    font-size: clamp(0.85rem, 1.8vw, 1.4rem);
+    padding: clamp(0.7rem, 1vw, 1.5rem) clamp(1rem, 10vw, 5rem);
+    width: clamp(8rem, 25vw, 16rem);
+    border-radius: clamp(0.95rem, 4vw, 2.25rem);
+    cursor: pointer;
     transition: all 0.3s;
+    font-family: "Jura", serif;
 }
 
-#meuModal .btn-secondary:hover {
-    background-color: #218838;
+.btn-secondary:hover {
+    background-color: #8f9043;
     transform: scale(1.05);
 }
+a {
+    color: black; /* Garante que o link tenha o texto preto */
+    text-decoration: none; /* Remover sublinhado do link */
+}
 
+.modal-body .certos li{
+    list-style: none;
+}
+.modal-body .certos li::before {
+    content: "✓ ";
+}
 .footer {
     height: auto;
     background-color: black;
