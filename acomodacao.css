@@ -82,12 +82,93 @@
     margin-right: auto;
 }
 
-.conteudo-acomodacao .col p {
+.conteudo-acomodacao .col h2 {
     font-weight: bold; /* Texto em negrito */
     margin-bottom: 10px; /* Espaço abaixo do texto */
     text-align: center; /* Centralizar texto */
+    font-family: "Jura", serif;
+}
+.conteudo-acomodacao .col p, ul{
+    font-family: "Jura", serif;    
 }
 
+#meuModal .modal-content {
+    background-color: #dfdfdf;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#meuModal .modal-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 0;
+    border-bottom: none;
+}
+
+#meuModal .modal-header img {
+    width: calc(100% - 20px);
+    margin: 10px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#meuModal .modal-title {
+    margin: 15px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+#meuModal .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 8px;
+    z-index: 1;
+}
+
+#meuModal .btn-close:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#meuModal .modal-body {
+    text-align: center;
+    padding: 0 20px 20px;
+}
+
+#meuModal .modal-body p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#meuModal .modal-footer {
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    padding: 0 20px 20px;
+}
+
+#meuModal .btn-secondary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#meuModal .btn-secondary:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
 
 .footer {
     height: auto;
