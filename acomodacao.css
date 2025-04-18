@@ -113,10 +113,11 @@ mesmo espacamento, cor de fundo, bordas arredondadas responsivas e uma sombra a 
     color: black;
 }
 
-/* para os paragrafos e listas: preto com fonte Jura */
-.container-caravana p, ul, .modal-body p{
+/* para os paragrafos e listas e texto do botao alugar: preto com fonte Jura */
+.container-caravana p, ul, .modal-body p, .btn-secondary, a{
     color: black;
-    font-family: "Jura", serif;   
+    font-family: "Jura", serif;
+    text-decoration: none;   
 }
 
 /*para centralizar o +info e garantir que ele fique no fundo da celula*/
@@ -133,90 +134,87 @@ mesmo espacamento, cor de fundo, bordas arredondadas responsivas e uma sombra a 
     opacity: 1 !important; /*força a opacidade total, evitando com que o fundo da pagina das caravanas se veja*/
 }
 
+/*para escurecer um pouco a imagem de fundo da caravana usamos um pseudo elemento*/
 .modal-backdrop::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    content: ""; /*cria um elemento vazio que é necessario para o before*/
+    position: absolute; /*posiciona esse elemento de forma independente do fluxo normal*/
+    inset: 0; /* ocupa todo o espaço do .modal-backdrop*/
+    background-color: rgba(0, 0, 0, 0.5); /* define a opacidade*/
+    z-index: 1; /*garante que o overlay fique acima do fundo mas abaixo do conteudo do modal*/
 }
+
+/*conteudo do modal: largura maxima de 60% da largura da tela, 
+margem de 2% da largura da tela em cima/baixo 
+e centraliza horizonalmente (auto)*/
 .modal-dialog {
     max-width: 60vw;
-    margin: 2vw auto; /* mantém o modal centrado */
+    margin: 2vw auto;
 }
+
+/*cabeçalho do modal: organizado em coluna e centralizado */
 .modal-header {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: none;
 }
 
-.btn-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    padding: 8px;
-    z-index: 1;
-}
-
-
-.modal-footer {
-    display: flex;
-    justify-content: center;
-    border-top: none;
-    padding: 0 20px 20px;
-}
-
-.btn-secondary {
-    background-color: #686931;
-    color: black;
-    border: none;
-    margin-top: clamp(1rem, 4vh, 3rem);
-    font-size: clamp(0.85rem, 1.8vw, 1.4rem);
-    padding: clamp(0.7rem, 1vw, 1.5rem) clamp(1rem, 10vw, 5rem);
-    width: clamp(8rem, 25vw, 16rem);
-    border-radius: clamp(0.95rem, 4vw, 2.25rem);
-    cursor: pointer;
-    transition: all 0.3s;
-    font-family: "Jura", serif;
-}
-
-.btn-secondary:hover {
-    background-color: #8f9043;
-    transform: scale(1.05);
-}
-a {
-    color: black; /* Garante que o link tenha o texto preto */
-    text-decoration: none; /* Remover sublinhado do link */
-}
-
+/*substituir a bolinha padrao por certos*/
 .modal-body .certos li{
     list-style: none;
 }
 .modal-body .certos li::before {
     content: "✓ ";
 }
+
+/* footer do modal: centralizado*/
+.modal-footer {
+    justify-content: center;
+}
+
+/* botao de x, cinzento, redondo, que aparece no canto superior direito*/
+.btn-close {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    background-color: rgb(92, 87, 87);
+    border-radius: 50%;
+    z-index: 1;
+}
+/*estilos do botao alugar*/
+.btn-secondary {
+    background-color: #686931;
+    padding: 1vw;
+    width: 20vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+/* estilos do botao alugar quando passa o rato em cima  */
+.btn-secondary:hover {
+    background-color: #8f9043;
+    transform: scale(1.05);
+}
+ /*estilos do footer*/
 .footer {
-    height: auto;
     background-color: black;
     color: white;
     font-family: "Jura", serif;
-    padding: 1rem 0;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem; /* espaço entre os elementos */
+    gap: 2vw; /* espaço entre os elementos */
     text-align: center;
 }
-
+/* estilos dos icons das redes sociais */
 .social-icons {
     display: flex;
-    gap: 1rem; /* espaço entre os ícones */
+    gap: 1.5vw; /* espaço entre os ícones */
+
 }
+/* para fazer com que só no icon é que é clicavel, colocar o cursor pointer na imagem */
 .social-icons img {
     cursor: pointer;
 }
