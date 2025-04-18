@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+.cabecalho {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos da imagem do cabeçalho */
+.imagem-cabecalho img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-transparent {
+    position: absolute;
+    top: 2vw;
+    right: 5vw;
+}
+
+.nav-link {
+    font-weight: 800;
+    font-family: "Josefin Slab", serif;
+    margin: 0 clamp(20px, 5vw, 40px);
+    font-size: 1.5vw;
+    color: white;  /* Ajuste o valor conforme desejado */
+}
+.botao-inicio{
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.conteudo-contacto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-family: "Jura", serif;
+}
+.contact-form {
+    background-color: black;
+    padding: 40px 30px; /* ⬅️ mais espaço interno (vertical e horizontal) */
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px; /* ⬅️ largura reduzida */
+    height: 600px;     /* ⬅️ altura aumentada para visual retangular */
+    margin: 40px auto; /* ⬅️ centralizado e com espaço externo */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form label {
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: white;
+    color: black;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.contact-form button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ddd;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.quote-section{
+    color: white;
+    margin-top: 80px;
+
+}
+.quote-section h2{
+    text-align: center;
+}
+.quote-section p{
+    text-align: right;
+}
