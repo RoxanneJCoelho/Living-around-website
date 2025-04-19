@@ -54,14 +54,14 @@ o vw é Viewport Width, ou seja, por exemplo 1vw = 1% da largura visível da jan
     right: 5vw;
 }
 
-/* letras da navbar: preto, negrito, com a fonte Josefin Slab, 
-margem superior e inferior 0, esquerda e direita 5vW para dar um certo espaco entre as palavras 
+/* letras da navbar: preto, negrito, com a fonte Josefin Slab,
+margem superior e inferior 0, esquerda e direita 2vW para dar um certo espaco entre as palavras
 e font size de tamanho responsivo*/
 .nav-link {
     color: black;
     font-weight: bold;
     font-family: "Josefin Slab", serif;
-    margin: 0 5vw; 
+    margin: 0 2vw;
     font-size: 1.5vw;  
 }
 

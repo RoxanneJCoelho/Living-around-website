@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* vamos dar uma cor amarela ao body, quando a tela ficar mais pequena não se ver branco */
+
+body{
+    background-color: rgba(180, 155, 44, 0.25);}
+
 /* Estilos do cabeçalho */
 .cabecalho {
     position: relative;
