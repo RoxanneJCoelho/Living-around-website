@@ -109,3 +109,40 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
 .quote-section p{
     text-align: right;
 }
+
+.modal-content{
+    border-radius: 3vw;
+    text-align: center;
+}
+.modal-body{
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 1vw;
+
+}
+
+.modal-footer {
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1vw;
+}
+
+.btn{
+    background-color: rgb(54, 109, 228);
+    color: white;
+    text-align: center;
+    width: 40%;
+    padding: 1vw;                          
+    border-radius: 4vw;
+
+}
+.modal-footer .btn:hover {
+    background-color:rgb(63, 63, 255); /* azul mais escuro no hover */
+    color: white;
+  }
