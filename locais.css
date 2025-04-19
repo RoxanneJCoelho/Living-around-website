@@ -27,11 +27,11 @@ escurecemos um pouco com o filter*/
 .imagem-cabecalho img {
     width: 100%;
     height: auto;
-    filter: brightness(60%);
+    filter: brightness(30%);
 }
 
 
-/* navbar: colocada no canto superior direito do cabecalho de forma responsiva */
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva e vai ficar por cima de qualquer outro elemento para podermos aceder a vontade */
 .navbar-transparent {
     position: absolute;
     top: 2vw;
@@ -59,82 +59,41 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     cursor: pointer;
 }
 
-.conteudo-contacto{
+ /* container: tem o formulario, a foto e a morada, vai ficar a 20% do topo do cabecalho, para nao tapar o botao inicio e a navbar */
+.container{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+    top: 20%;
     font-family: "Jura", serif;
 }
+
 .contact-form {
-    background-color: black;
-    padding: 40px 30px; /* ⬅️ mais espaço interno (vertical e horizontal) */
-    border-radius: 20px;
-    width: 100%;
-    max-width: 400px; /* ⬅️ largura reduzida */
-    height: 600px;     /* ⬅️ altura aumentada para visual retangular */
-    margin: 40px auto; /* ⬅️ centralizado e com espaço externo */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #dfdfdf;
+    color: black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    border-radius: 2vw;
+    width: 70%;
+    margin-left: 6vw;
+
 }
 
-.contact-form label {
-    color: white;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: none;
-    font-size: 1em;
-    display: block;
-}
-
-.contact-form input,
-.contact-form textarea {
+.contact-form select{
     background-color: white;
     color: black;
-}
-
-.contact-form textarea {
-    resize: vertical;
-    height: 120px;
+    width: 100%;
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+    padding: 1vw;
 }
 
 .contact-form button {
-    background-color: white;
+    background-color: #686931;
     color: black;
-    font-weight: bold;
+    width: 100%;
+    margin-top: 2vw;
+    padding: 1vw;                          
+    border-radius: 1vw;         
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #ddd;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.quote-section{
-    color: white;
-    margin-top: 80px;
-
-}
-.quote-section h2{
-    text-align: center;
-}
-.quote-section p{
-    text-align: right;
 }

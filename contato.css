@@ -31,7 +31,7 @@ escurecemos um pouco com o filter*/
 }
 
 
-/* navbar: colocada no canto superior direito do cabecalho de forma responsiva */
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva e vai ficar por cima de qualquer outro elemento para podermos aceder a vontade*/
 .navbar-transparent {
     position: absolute;
     top: 2vw;
@@ -58,7 +58,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     left: 5vw;
     cursor: pointer;
 }
-
+ /* container: tem o formulario e a frase, vai ficar a 20% do topo do cabecalho, para nao tapar o botao inicio e a navbar */
 .container{
     position: absolute;
     top: 20%;

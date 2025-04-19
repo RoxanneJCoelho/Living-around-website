@@ -15,6 +15,7 @@
     <!-- link para o ficheiro css -->
     <link rel="stylesheet" href="locais.css">
 
+
     <!-- link para a letra josefin slab -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
 
@@ -73,43 +74,24 @@
             <div class="row row-cols-2">
                 <div class="col">
                     <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nome:</label>
-                            <input type="text" id="name" placeholder="Digite o seu nome">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" placeholder="email@exemplo.pt">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Mensagem:</label>
-                            <textarea id="message" placeholder="Escreva aqui a sua mensagem"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target=".modal">
-                            Enviar
+                        <label for="pais">Escolha o país:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>país</option>
+                            <option value="1">Portugal</option>
+                        </select>
+                        <label for="cidade">Escolha a cidade:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>cidade</option>
+                            <option value="1">Porto</option>
+                          </select>                        
+                        <button type="button" class="btn btn-light">
+                            Ver
                         </button>           
                     </form>
                 </div>
                 <div class="col">
-                    <div class="quote-section">
-                        <h2>"Viajar é descobrir que todos estão errados sobre outros países."</h2>
-                        <p>- Aldous Huxley</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- modal -->
-            <div class="modal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <p>O seu formulário foi submetido com sucesso!</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>
-                        </div>
+                    <div class="mapa">
+                        <img src="imagens_figma/mapa.png" alt="mapa">
                     </div>
                 </div>
             </div>
