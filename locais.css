@@ -1,34 +1,57 @@
+/* Ficheiro css da página dos locais do trabalho individual de programação web */
+/* NOME: Roxanne João Coelho */
+
+/* seletor universal: retira a margem e o padding e coloca o modelo de bordex-box, 
+que faz com que as dimensoes totais dum elemento incluam margem e padding  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* vamos dar uma cor amarela ao body, quando a tela ficar mais pequena não se ver branco */
 
-/* Estilos do cabeçalho */
+body{
+    background-color: rgba(180, 155, 44, 0.25);
+}
+
+/* cabecalho: posição relativa, o que é bom para depois poder posicionar os seus elementos filhos 
+e width 100% para ocupar toda a largura da div */
 .cabecalho {
     position: relative;
     width: 100%;
 }
 
-/* Estilos da imagem do cabeçalho */
+/* imagem do cabeçalho: tem uma largura de 100% em relaçao ao elemento pai para melhor responsividade 
+e poe a altura automaticamente em relacao á largura para não distorcer 
+escurecemos um pouco com o filter*/
 .imagem-cabecalho img {
     width: 100%;
     height: auto;
+    filter: brightness(60%);
 }
 
+
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva */
 .navbar-transparent {
     position: absolute;
     top: 2vw;
     right: 5vw;
+    z-index: 1;
 }
 
+/* letras da navbar: branco, negrito, com a fonte Josefin Slab, 
+margem superior e inferior 0, esquerda e direita 2vW para dar um certo espaco entre as palavras 
+e font size de tamanho responsivo*/
 .nav-link {
-    font-weight: 800;
+    color: white;
+    font-weight: bold;
     font-family: "Josefin Slab", serif;
-    margin: 0 clamp(20px, 5vw, 40px);
-    font-size: 1.5vw;
-    color: white;  /* Ajuste o valor conforme desejado */
+    margin: 0 2vw; 
+    font-size: 1.5vw;  
 }
+
+/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva
+o cursor: pointer faz com que seja clicável ao passar com o rato */
 .botao-inicio{
     position: absolute;
     top: 2vw;
