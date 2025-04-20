@@ -1,11 +1,19 @@
+/* Ficheiro css da página da acomodação do trabalho individual de programação web */
+/* NOME: Roxanne João Coelho */
+
+/* seletor universal: retira a margem e o padding e coloca o modelo de bordex-box, 
+que faz com que as dimensoes totais dum elemento incluam margem e padding  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* cabecalho: posição relativa, o que é bom para depois poder posicionar os seus elementos filhos 
+e width 100% para ocupar toda a largura da div */
 .cabecalho {
     position: relative;
+    width: 100%;
 }
 
 .navbar-transparent {
@@ -19,7 +27,7 @@
     font-family: "Jura", serif;
     margin: 0 clamp(20px, 5vw, 40px);
     font-size: 1.5vw;
-    color: black;  /* Ajuste o valor conforme desejado */
+    color: black;
 }
   
 .titulo h1{
@@ -33,63 +41,34 @@
     font-size: 6vw;
   }
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+.conteudo-principal{
+    font-family: "Jura", serif;
 }
 
-.col {
+.container-fluid{
+    padding: 0;
+}
+
+.row1{
     background-color: rgba(180, 155, 44, 0.25);
-    font-family: "Jura", serif;
-    }
-
-.viva-livre h2{
-    font-family: "Jura", serif;
-    letter-spacing: 4px;
-    justify-content: center;
-
-}
-.trabalho-remoto h3{
-    font-family: "Jura", serif;
-}
-
-.centralizado {
     display: flex;
-    flex-direction: column;  /* Para alinhar verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center;     /* Centraliza horizontalmente */
-    height: 100%;            /* Garante que a coluna tenha altura suficiente */
-  }
-
-.centralizado h3{
-    font-weight: bolder;
-}
-  
-.imagem-container {
-    position: relative;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
 }
 
-.col-7 {
-    position: relative;
-    background-color: black;
-    color: white;
-    font-family: "Jura", serif;
-  }
-.arrow-up-1 {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    width: 2rem; /* Tamanho padrão */
-    filter: brightness(0) invert(1); /* Deixa branco */
-    z-index: 10;
-    cursor: pointer;
+.row2{
+    display: flex;
+    flex-direction: column;
 }
+
 .col-5 {
-    background-color: black; /* só pra ver o espaço da coluna */
+    background-color: black;
   }
 
 .botao {
-    margin-top: 4vw;              /* equivalente ao meio de clamp(1rem, 4vh, 3rem) */
+    margin-top: 4vw;             
     font-weight: bolder;
     font-size: 1.8vw;             
     padding: 1vw 10vw;            
@@ -97,18 +76,6 @@
     border-radius: 4vw;           
     cursor: pointer;
 }
-.descobrir {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.explorar {
-    background-color: transparent;
-    color: black;
-    border: 2px solid black;
-}
-
 .arrow-up-2 {
     position: absolute;
     bottom: 1rem;
@@ -119,23 +86,12 @@
     cursor: pointer;
 }
 
-
-.blog {
+.arrow-up-1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Jura", serif;
-    background-color: #1e1e1e;
-    color: white;
-    border: none;
-}
-.arrow-up-3 {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    width: 2rem; /* Tamanho padrão */
-    filter: none;
+    bottom: 1vw;
+    right: 1vw;
+    width: 2vw; /* Tamanho padrão */
+    filter: brightness(0) invert(1); /* Deixa branco */
     z-index: 10;
     cursor: pointer;
 }
