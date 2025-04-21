@@ -45,22 +45,51 @@ e width 100% para ocupar toda a largura da div */
     font-family: "Jura", serif;
 }
 
-.container-fluid{
-    padding: 0;
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(180, 155, 44, 0.25);
+    padding: 3vw;
+
+}
+.row .col:nth-child(2) {
+    border-left: 1px solid black;
+    padding-left: 3vw;
 }
 
-.row1{
-    background-color: rgba(180, 155, 44, 0.25);
+.col h3{
+    margin-top: 3vw;
+    margin-left: 3vw;
+    letter-spacing: 0.8vw;
+    
+}
+.col h4{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.col p{
+    line-height: 0.6;
+    font-weight: bold;
+    text-align: left;
+
+}
+.verde{
+    color: #686931;
+
+}
+
+.container{
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.row2{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    gap:25vw;
+    
 }
 
 .col-5 {
