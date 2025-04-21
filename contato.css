@@ -25,8 +25,6 @@ e width 100% para ocupar toda a largura da div */
 e poe a altura automaticamente em relacao á largura para não distorcer 
 escurecemos um pouco com o filter*/
 .imagem-cabecalho img {
-    width: 100%;
-    height: auto;
     filter: brightness(60%);
 }
 
@@ -61,7 +59,9 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
  /* container: tem o formulario e a frase, vai ficar a 20% do topo do cabecalho, para nao tapar o botao inicio e a navbar */
 .container{
     position: absolute;
-    top: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "Jura", serif;
 }
 
@@ -70,9 +70,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     color: white;
     padding: 3vw;
     border-radius: 2vw;
-    width: 70%;
-    margin-left: 6vw;
-
+    width: 75%;
 }
 
 .contact-form input,
@@ -84,7 +82,10 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     border-radius: 1vw;
     margin-bottom: 2vw;
 }
+.contact-form textarea{
+    height: 7vw;
 
+}
 .contact-form button {
     background-color: transparent;
     color: white;
@@ -100,7 +101,6 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     z-index: 0;
     color: white;
     margin-top: 4vw;
-    margin-left: 6vw;
 
 }
 .quote-section h2{
@@ -111,6 +111,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
 }
 
 .modal-content{
+    font-family: "Jura", serif;
     border-radius: 3vw;
     text-align: center;
 }
@@ -150,30 +151,10 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
 /* Quando a largura do ecrã for igual ou inferior a 768px (tablet e telemóvel) */
 @media (max-width: 768px) {
     .container {
-      top: 120%;
-      left: 0;
-      right: 0;
-      margin: auto;
+      top: 160%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 90%; /* para garantir que cabe bem no ecrã */
-    }
-  
-    .contact-form {
-      width: 100%; /* ocupa a largura total da container em ecrãs pequenos */
-      margin-left: 0;
-      padding: 2vw;
-    }
-  
-    .contact-form button {
-      padding: 1vw;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      padding: 1vw;
-    }
-
-    .quote-section{
-        color: black;
     }
   }
   
