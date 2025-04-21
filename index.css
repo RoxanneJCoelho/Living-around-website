@@ -52,17 +52,16 @@ e width 100% para ocupar toda a largura da div */
     align-items: center;
     background-color:  rgba(180, 155, 44, 0.25);
     padding: 3vw;
-
 }
+
 .row .col:nth-child(2) {
     border-left: 1px solid black;
     padding-left: 3vw;
 }
 
 .col h3{
-    margin-top: 3vw;
-    margin-left: 3vw;
-    letter-spacing: 0.8vw;
+    margin-left: 5vw;
+    letter-spacing: 0.5vw;
     
 }
 .col h4{
@@ -88,7 +87,7 @@ e width 100% para ocupar toda a largura da div */
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap:25vw;
+    gap: 25vw;
     
 }
 
@@ -117,6 +116,7 @@ e width 100% para ocupar toda a largura da div */
     padding: 1vw 5vw;
     border-radius: 4vw;           
     cursor: pointer;
+    font-weight: bold;
 }
 
 .arrow-up-1 {
@@ -154,7 +154,8 @@ e width 100% para ocupar toda a largura da div */
     color: black;
     border: 2px solid black;
     padding: 1vw 5vw;
-    border-radius: 4vw;           
+    border-radius: 4vw;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -180,7 +181,8 @@ e width 100% para ocupar toda a largura da div */
     background-color: black;
     color: white;
     padding: 1vw 7vw;
-    border-radius: 4vw;           
+    border-radius: 4vw;
+    font-weight: bold;           
     cursor: pointer;
 }
 

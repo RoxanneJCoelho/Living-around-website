@@ -62,12 +62,14 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
  /* container: tem o formulario, a foto e a morada, vai ficar a 20% do topo do cabecalho, para nao tapar o botao inicio e a navbar */
 .container{
     position: absolute;
-    top: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "Jura", serif;
 }
 
 .contact-form {
-    background-color: #dfdfdf;
+    background-color: #d8d6d6;
     color: black;
     padding-left: 3vw;
     padding-right: 3vw;
@@ -75,8 +77,6 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     padding-bottom: 10vw;
     border-radius: 2vw;
     width: 70%;
-    margin-left: 6vw;
-
 }
 
 .contact-form select{
@@ -97,28 +97,32 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     border-radius: 1vw;         
     cursor: pointer;
 }
+
 .mapa img{
-    width: 70%;
+    width: 80%;
     border-radius: 1vw;
     margin-left: 8vw;
 
 }
-.morada{
-    width: 70%;
+
+.morada {
+    width: 80%;
     background-color: black;
     color: white;
     margin-top: 2vw;
     border-radius: 2vw;
     padding: 2vw;
     text-align: center;
-    font-size: 1.5vw;
     margin-left: 8vw;
+    word-break: break-word;
 }
+
 /* Quando a largura do ecrã for igual ou inferior a 768px (tablet e telemóvel) */
 @media (max-width: 768px) {
     .container {
-      top: 120%;
+      top: 180%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%; /* para garantir que cabe bem no ecrã */
     }
-  
-}
+  }

@@ -154,7 +154,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
       top: 160%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 90%; /* para garantir que cabe bem no ecrã */
+      width: 100%; /* para garantir que cabe bem no ecrã */
     }
   }
   
