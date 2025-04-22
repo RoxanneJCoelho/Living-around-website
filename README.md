@@ -9,11 +9,11 @@ O objetivo foi replicar o design dum site fictício de aluguer de caravanas forn
 
 ## Descrição do trabalho
 O trabalho tem 5 páginas:
-- **index**: a página principal, no *footer* as redes sociais remetem para a página da respetiva rede social da cesae;
-- **acomodação**: onde tem o catálogo das caravanas (no +info da hippie ride, aparece um *modal* com as informações da caravana, nos restantes remete para o site blog);
-- **blog**: uma página fíctica em manutenção, todos os *links* que não tinham design remetem para essa página;
-- **locais**: aonde indica as localidades da empresa (por enquanto só tem uma localidade no Porto);
-- **contacto**: tem um formulario para dúvidas e sugestões dos clientes, ao carregar em enviar aparece uma notificação de que o formulario foi submetido com sucesso;
+- **Index**: A página principal, no *footer* as redes sociais remetem para a página da respetiva rede social da cesae;
+- **Acomodação**: Onde tem o catálogo das caravanas (no +info da hippie ride, aparece um *modal* com as informações da caravana, nos restantes remete para o site blog);
+- **Blog**: Uma página fícticia em manutenção: todos os *links* que não tinham design remetem para essa página;
+- **Locais**: Aonde indica as localidades da empresa (por enquanto só tem uma localidade no Porto);
+- **Contacto**: Tem um formulario para dúvidas e sugestões dos clientes, ao carregar em enviar aparece uma notificação de que o formulario foi submetido com sucesso;
 - nas pastas icons e imagens_figma contém imagens e icons que foram usados no trabalho.
 
 ## Linguagens Utilizadas
@@ -22,7 +22,7 @@ O trabalho tem 5 páginas:
 - **Bootstrap**: Construção de componentes (*navbar, modal e grids*) 
 
 ## Desafios
-O principal desafio foi garantir a **responsividade do site**, tentando com que os elementos se mantivessem corretamente posicionados e formatados nos ecrãs de diferentes tamanhos, especialmente em telas mais pequenas, como telemóveis.
+O principal desafio foi garantir a **responsividade do site**, fazendo com que os elementos estivessem corretamente posicionados e formatados nos ecrãs de diferentes tamanhos, especialmente em telas mais pequenas como telemóveis.
 
 
 
