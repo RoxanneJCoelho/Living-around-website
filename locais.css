@@ -8,8 +8,8 @@ que faz com que as dimensoes totais dum elemento incluam margem e padding  */
     padding: 0;
     box-sizing: border-box;
 }
-/* vamos dar uma cor amarela ao body, quando a tela ficar mais pequena não se ver branco */
 
+/* vamos dar uma cor amarela ao body, quando a tela ficar mais pequena não se ver branco */
 body{
     background-color: rgba(180, 155, 44, 0.25);
 }
@@ -30,8 +30,7 @@ escurecemos um pouco com o filter*/
     filter: brightness(30%);
 }
 
-
-/* navbar: colocada no canto superior direito do cabecalho de forma responsiva e vai ficar por cima de qualquer outro elemento para podermos aceder a vontade */
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva e vai ficar por cima de qualquer outro elemento para podermos aceder a vontade (sem o z-index nao dava para clicar nos elementos em tela pequena)*/
 .navbar-transparent {
     position: absolute;
     top: 2vw;
@@ -50,8 +49,7 @@ e font size de tamanho responsivo*/
     font-size: 1.5vw;  
 }
 
-/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva
-o cursor: pointer faz com que seja clicável ao passar com o rato */
+/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva*/
 .botao-inicio{
     position: absolute;
     top: 2vw;
@@ -59,7 +57,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     cursor: pointer;
 }
 
- /* container: tem o formulario, a foto e a morada, vai ficar a 20% do topo do cabecalho, para nao tapar o botao inicio e a navbar */
+ /* container: tem o formulario, o mapa e a morada, elementos centralizados com fonte Jura */
 .container{
     position: absolute;
     top: 50%;
@@ -68,6 +66,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     font-family: "Jura", serif;
 }
 
+/* estilos do container do formulario*/
 .contact-form {
     background-color: #d8d6d6;
     color: black;
@@ -79,6 +78,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     width: 70%;
 }
 
+/*estilos do select do formulario*/
 .contact-form select{
     background-color: white;
     color: black;
@@ -88,6 +88,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     padding: 1vw;
 }
 
+/*estilos do botao do formulario*/
 .contact-form button {
     background-color: #686931;
     color: black;
@@ -98,6 +99,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     cursor: pointer;
 }
 
+/*estilos do mapa*/
 .mapa img{
     width: 80%;
     border-radius: 1vw;
@@ -105,6 +107,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
 
 }
 
+/* estilos do container que contem a morada*/
 .morada {
     width: 80%;
     background-color: black;
@@ -117,12 +120,12 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     word-break: break-word;
 }
 
-/* Quando a largura do ecrã for igual ou inferior a 768px (tablet e telemóvel) */
+/* Em ecras pequenos, o conteudo do container (formulario, mapa e morada), passam para debaixo da imagem, para nao ficar tudo concentrado no cabeçalho */
 @media (max-width: 768px) {
     .container {
       top: 180%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%; /* para garantir que cabe bem no ecrã */
+      width: 100%;
     }
   }

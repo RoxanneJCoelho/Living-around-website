@@ -42,7 +42,7 @@ o vw é Viewport Width, ou seja, por exemplo 1vw = 1% da largura visível da jan
     font-family: "Josefin Slab", serif;
     font-weight: bold;
     font-size: 6vw; 
-    white-space: nowrap; /* faz com que o titulo fique sempre numa linha e não quebre de linha */
+    white-space: nowrap; /* faz com que o titulo nunca quebre de linha */
     background-color: rgba(0, 0, 0, 0.85); /* faixa preta transparente ao longo da largura do cabecalho */
     padding: 2vw;
 }
@@ -65,23 +65,22 @@ e font size de tamanho responsivo*/
     font-size: 1.5vw;  
 }
 
-/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva
-o cursor: pointer faz com que seja clicável ao passar com o rato */
-.botao-inicio{
+/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva*/
+.botao-inicio {
     position: absolute;
     top: 2vw;
     left: 5vw;
     cursor: pointer;
 }
 
-/* main: definir cor de fundo amarela com 25% transparência com um certo espacamento responsivo*/
+/* main: definir cor de fundo amarela com 25% transparência com espacamento responsivo para os elementos nao ficarem colados as bordas*/
 .caravana {
     background-color:  rgba(180, 155, 44, 0.25);
     padding: 3vw 5vw;
 }
 
 /* espaçamento para as colunas */
-.col{
+.col {
     padding: 2vw;
 }
 
@@ -89,7 +88,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
 mesmo espacamento, cor de fundo, bordas arredondadas responsivas e uma sombra a direita e em baixo */
 .container-caravana, .modal-content {
     padding: 2vw;
-    background-color: #dfdfdf; 
+    background-color: #e4e2e2; 
     border-radius: 2vw;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
@@ -113,8 +112,8 @@ mesmo espacamento, cor de fundo, bordas arredondadas responsivas e uma sombra a 
     color: black;
 }
 
-/* para os paragrafos e listas e texto do botao alugar: preto com fonte Jura */
-.container-caravana p, ul, .modal-body p, .btn-secondary, a{
+/* para os paragrafos, listas e texto do botao alugar: preto com fonte Jura */
+.container-caravana p, ul, .modal-body p, .botao-alugar, a{
     color: black;
     font-family: "Jura", serif;
     text-decoration: none;   
@@ -134,13 +133,13 @@ mesmo espacamento, cor de fundo, bordas arredondadas responsivas e uma sombra a 
     opacity: 1 !important; /*força a opacidade total, evitando com que o fundo da pagina das caravanas se veja*/
 }
 
-/*para escurecer um pouco a imagem de fundo da caravana usamos um pseudo elemento*/
+/*para escurecer um pouco a imagem de fundo da caravana no modal usamos um pseudo elemento, todos estes paramentros sao importantes para a escurecimento da imagem*/
 .modal-backdrop::before {
     content: ""; /*cria um elemento vazio que é necessario para o before*/
     position: absolute; /*posiciona esse elemento de forma independente do fluxo normal*/
     inset: 0; /* ocupa todo o espaço do .modal-backdrop*/
     background-color: rgba(0, 0, 0, 0.5); /* define a opacidade*/
-    z-index: 1; /*garante que o overlay fique acima do fundo mas abaixo do conteudo do modal*/
+    z-index: 1; /*o escurecimento da imagem fica acima da imagem mas abaixo do conteudo do modal*/
 }
 
 /*conteudo do modal: largura maxima de 60% da largura da tela, 
@@ -182,7 +181,7 @@ e centraliza horizonalmente (auto)*/
     z-index: 1;
 }
 /*estilos do botao alugar*/
-.btn-secondary {
+.botao-alugar {
     background-color: #686931;
     padding: 1vw;
     width: 20vw;
@@ -191,12 +190,13 @@ e centraliza horizonalmente (auto)*/
     transition: all 0.3s;
 }
 /* estilos do botao alugar quando passa o rato em cima  */
-.btn-secondary:hover {
+.botao-alugar:hover {
     background-color: #8f9043;
     transform: scale(1.05);
 }
- /*estilos do footer*/
-.footer {
+
+ /* rodapé: fundo preto, cor branca, fonte Jura, padding responsivo, elementos com direçao de coluna e centralizados*/
+ .footer {
     background-color: black;
     color: white;
     font-family: "Jura", serif;
@@ -205,13 +205,14 @@ e centraliza horizonalmente (auto)*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vw; /* espaço entre os elementos */
+    gap: 2vw; 
     text-align: center;
 }
+
 /* estilos dos icons das redes sociais */
 .social-icons {
     display: flex;
-    gap: 1.5vw; /* espaço entre os ícones */
+    gap: 1.5vw; 
 
 }
 /* para fazer com que só no icon é que é clicavel, colocar o cursor pointer na imagem */

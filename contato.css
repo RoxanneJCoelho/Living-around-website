@@ -8,9 +8,9 @@ que faz com que as dimensoes totais dum elemento incluam margem e padding  */
     padding: 0;
     box-sizing: border-box;
 }
-/* vamos dar uma cor amarela ao body, quando a tela ficar mais pequena não se ver branco */
 
-body{
+/* vamos dar uma cor amarela ao body, quando a tela ficar mais pequena não se ver branco */
+body {
     background-color: rgba(180, 155, 44, 0.25);
 }
 
@@ -28,8 +28,7 @@ escurecemos um pouco com o filter*/
     filter: brightness(60%);
 }
 
-
-/* navbar: colocada no canto superior direito do cabecalho de forma responsiva e vai ficar por cima de qualquer outro elemento para podermos aceder a vontade*/
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva e vai ficar por cima de qualquer outro elemento para podermos aceder a vontade (sem o z-index nao dava para clicar nos elementos em tela pequena)*/
 .navbar-transparent {
     position: absolute;
     top: 2vw;
@@ -48,16 +47,16 @@ e font size de tamanho responsivo*/
     font-size: 1.5vw;  
 }
 
-/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva
-o cursor: pointer faz com que seja clicável ao passar com o rato */
-.botao-inicio{
+/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva*/
+.botao-inicio {
     position: absolute;
     top: 2vw;
     left: 5vw;
     cursor: pointer;
 }
- /* container: tem o formulario e a frase, vai ficar a 20% do topo do cabecalho, para nao tapar o botao inicio e a navbar */
-.container{
+
+/* container: tem o formulario, o mapa e a morada, elementos centralizados com fonte Jura */
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -65,6 +64,7 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     font-family: "Jura", serif;
 }
 
+/*estilos do container do formulario*/
 .contact-form {
     background-color: black;
     color: white;
@@ -73,8 +73,9 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     width: 75%;
 }
 
+/*estilos para o input e o textarea do formulario*/
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
     background-color: white;
     color: black;
     width: 100%;
@@ -82,10 +83,14 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     border-radius: 1vw;
     margin-bottom: 2vw;
 }
+
+/* Vamos dar um pouco mais de altura ao textarea */
 .contact-form textarea{
     height: 7vw;
 
 }
+
+/* estilos do botao do formulario*/
 .contact-form button {
     background-color: transparent;
     color: white;
@@ -97,25 +102,30 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     cursor: pointer;
 }
 
-.quote-section{
+/* estilos da secao de frase */
+.frase {
     z-index: 0;
     color: white;
     margin-top: 4vw;
 
 }
-.quote-section h2{
+
+.frase h2{
     text-align: center;
 }
-.quote-section p{
+
+.frase p{
     text-align: right;
 }
 
-.modal-content{
+/* estilos para o modal (deixar todos os elementos centralizados, com espaçamento entre si, em direção de coluna (cima para baixo) */
+.modal-content {
     font-family: "Jura", serif;
     border-radius: 3vw;
     text-align: center;
 }
-.modal-body{
+
+.modal-body {
     border-top: none;
     display: flex;
     justify-content: center;
@@ -134,7 +144,8 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     margin-bottom: 1vw;
 }
 
-.btn{
+/* estilos do botao do modal */
+.btn {
     background-color: rgb(54, 109, 228);
     color: white;
     text-align: center;
@@ -143,18 +154,25 @@ o cursor: pointer faz com que seja clicável ao passar com o rato */
     border-radius: 4vw;
 
 }
-.modal-footer .btn:hover {
-    background-color:rgb(63, 63, 255); /* azul mais escuro no hover */
-    color: white;
-  }
 
-/* Quando a largura do ecrã for igual ou inferior a 768px (tablet e telemóvel) */
+/* estilos do modal quando passa o rato*/
+.modal-footer .btn:hover {
+    background-color:rgb(63, 63, 255); 
+    color: white;
+}
+
+/* Em ecras pequenos, o conteudo do container (formulario e frase), passam para debaixo da imagem, para nao ficar tudo concentrado no cabeçalho */
 @media (max-width: 768px) {
     .container {
       top: 160%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%; /* para garantir que cabe bem no ecrã */
+      width: 100%; 
     }
-  }
+
+    /* para se notar melhor a frase no fundo amarelo */
+    .frase{
+        color: black;
+    }
+}
   

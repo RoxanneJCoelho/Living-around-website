@@ -1,3 +1,5 @@
+/* seletor universal: retira a margem e o padding e coloca o modelo de bordex-box, 
+que faz com que as dimensoes totais dum elemento incluam margem e padding  */
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +7,34 @@
 }
 
 /* vamos dar uma cor amarela ao body, quando a tela ficar mais pequena não se ver branco */
+body {
+    background-color: rgba(180, 155, 44, 0.25);
+}
 
-body{
-    background-color: rgba(180, 155, 44, 0.25);}
-
-/* Estilos do cabeçalho */
+/* cabecalho: posição relativa, o que é bom para depois poder posicionar os seus elementos filhos 
+e width 100% para ocupar toda a largura da div */
 .cabecalho {
     position: relative;
     width: 100%;
+}
+
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva e vai ficar por cima de qualquer outro elemento para podermos aceder a vontade (sem o z-index nao dava para clicar nos elementos em tela pequena)*/
+.navbar-transparent {
+    position: absolute;
+    top: 2vw;
+    right: 5vw;
+    z-index: 1;
+}
+
+/* letras da navbar: preto, negrito, com a fonte Josefin Slab,
+margem superior e inferior 0, esquerda e direita 2vW para dar um certo espaco entre as palavras
+e font size de tamanho responsivo*/
+.nav-link {
+    font-weight: bold;
+    font-family: "Josefin Slab", serif;
+    margin: 0 2vw;
+    font-size: 1.5vw;
+    color: black;
 }
 
 /* Estilos da imagem do cabeçalho */
@@ -21,37 +43,24 @@ body{
     height: auto;
 }
 
-/* Centralizar o título dentro do cabeçalho */
-.titulo {
+/*titulo do cabecalho:  tem que estar no meio do cabeçalho (top e left 50%, e mais um ajuste do transform), 
+branco, negrito, com a fonte Josefin Slab e um font-size responsivo */
+.titulo h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; /* Garante que o título fique centralizado */
-    width: 80%;
-}
-
-/* Estilos do título */
-.titulo h1 {
+    background-color: black;
+    padding: 5vw;
+    border-radius: 2vw;
     color: white;
     font-family: "Josefin Slab", serif;
-    font-size: 4vw; /* Tamanho da fonte responsivo */
-    background-color: rgba(0, 0, 0, 0.85);
-}
-.navbar-transparent {
-    position: absolute;
-    top: 2vw;
-    right: 5vw;
+    font-weight: bold;
+    font-size: 6vw;
 }
 
-.nav-link {
-    font-weight: 800;
-    font-family: "Josefin Slab", serif;
-    margin: 0 clamp(20px, 5vw, 40px);
-    font-size: 1.5vw;
-    color: black;  /* Ajuste o valor conforme desejado */
-}
-.botao-inicio{
+/* botao para ir para a pagina inicial: colocada no canto superior esquerdo do cabecalho de forma responsiva*/
+.botao-inicio {
     position: absolute;
     top: 2vw;
     left: 5vw;

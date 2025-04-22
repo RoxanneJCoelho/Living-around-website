@@ -1,4 +1,4 @@
-/* Ficheiro css da página da acomodação do trabalho individual de programação web */
+/* Ficheiro css da página principal (index) do trabalho individual de programação web */
 /* NOME: Roxanne João Coelho */
 
 /* seletor universal: retira a margem e o padding e coloca o modelo de bordex-box, 
@@ -16,36 +16,43 @@ e width 100% para ocupar toda a largura da div */
     width: 100%;
 }
 
+/* navbar: colocada no canto superior direito do cabecalho de forma responsiva */
 .navbar-transparent {
     position: absolute;
     top: 2vw;
     right: 5vw;
 }
 
+/* letras da navbar: preto, negrito, com a fonte Josefin Slab,
+margem superior e inferior 0, esquerda e direita 2vW para dar um certo espaco entre as palavras
+e font size de tamanho responsivo*/
 .nav-link {
-    font-weight: 800;
+    font-weight: bold;
     font-family: "Jura", serif;
-    margin: 0 clamp(20px, 5vw, 40px);
+    margin: 0 2vw;
     font-size: 1.5vw;
     color: black;
 }
-  
-.titulo h1{
+
+ /*titulo do cabecalho:  tem que estar no meio do cabeçalho (top e left 50%, e mais um ajuste do transform), 
+branco, negrito, com a fonte Josefin Slab e um font-size responsivo */
+.titulo h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-family: "Josefin Slab", serif;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 6vw;
-  }
+}
 
-.conteudo-principal{
+/* todo o conteudo da main tem que estar com a fonte Jura */
+.conteudo-principal {
     font-family: "Jura", serif;
 }
 
-
+/* na primeira linha, os elementos vao estar centralizados, com uma cor de fundo amarela e um padding responsivo para dar espaço nas bordas e entre as colunas */
 .row {
     display: flex;
     justify-content: center;
@@ -54,82 +61,96 @@ e width 100% para ocupar toda a largura da div */
     padding: 3vw;
 }
 
+/* para criar a linha que divide as colunas, vamos selecionar a segunda coluna e colocar uma linha de 1px de espessuar preta na margem esquerda */
 .row .col:nth-child(2) {
     border-left: 1px solid black;
     padding-left: 3vw;
 }
 
-.col h3{
+/* a frase "viva livre" vai ter uma margem esquerda responsiva para ficar mais centralizada e parecida com o design, e um espaçamento de letras de 0.5 vw */
+.col h3 {
     margin-left: 5vw;
     letter-spacing: 0.5vw;
     
 }
-.col h4{
+
+/* o titulo "trabalhos remotos" vai estar centrado a negrito e com uma margem em baixo para dar espaço das colunas  */
+.col h4 {
     font-weight: bold;
     text-align: center;
     margin-bottom: 3vw;
 }
 
-.col p{
+/* o texto das colunas de trabalhos remotos estao com um espaçamento de 0.6, negrito e alinhados a esquerda */
+.col p {
     line-height: 0.6;
     font-weight: bold;
     text-align: left;
 
 }
-.verde{
+
+/* as palavras "livre" e "mundo" foram selecionadas com a tag span para lhes ser aplicada a cor verde */
+.verde {
     color: #686931;
 
 }
 
-.container{
+/* o display flex e flex-direction row faz com que as colunas dos trabalhos remotos fiquem uma ao lado da outra.
+o gap é para dar espaçamento entre as colunas*/
+.container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     gap: 25vw;
     
 }
 
-.row2{
+/* a segunda linha tem cor de fundo preta e os seus elementos estão centralizados */
+.row2 {
     position: relative;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* os elementos da col-7 vao estar centralizados com a direçao de coluna (cima para baixo)*/
 .col-7 {
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
 }
-.col-7 h2{
+
+/* o titulo é branco com margem em baixo para dar espaço entre o titulo e o botao */
+.col-7 h2 {
     color: white;
     margin-bottom: 2vw;
 }
 
+/* o botao-1 é transparente, letras brancas, negrito com borda espessa branca, padding para deixar o botao mais alongado e bordas arrendondadas */
 .botao-1 {
     background-color: transparent;
     color: white;
+    font-weight: bold;
     border: 2px solid white;
     padding: 1vw 5vw;
     border-radius: 4vw;           
-    cursor: pointer;
-    font-weight: bold;
+    cursor: pointer; /* torna o elemento clicável */
+    
 }
 
+/* o arrow-up-1 fica no canto inferior direito, com uma largura de 2vw para ficar pequeno*/
 .arrow-up-1 {
     position: absolute;
     bottom: 1vw;
     right: 1vw;
-    width: 2vw; /* Tamanho padrão */
+    width: 2vw; 
     filter: brightness(0) invert(1); /* Deixa branco */
-    z-index: 1;
     cursor: pointer;
 }
 
-.row3{
+/* a terceira linha tem cor de fundo amarela e os seus elementos estão centralizados */
+.row3 {
     position: relative;
     background-color:  rgba(180, 155, 44, 0.25);
     display: flex;
@@ -137,18 +158,21 @@ e width 100% para ocupar toda a largura da div */
     align-items: center;
 }
 
-.row3 .col{
+/* os elementos da cols da row 3 vao estar centralizados com a direçao de coluna (cima para baixo)*/
+.row3 .col {
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
 }
 
-.row3 h2{
+/* o titulo da row3 está centrado com uma margem para dar espaço entre o titulo e o botao */
+.row3 h2 {
     text-align: center;
     margin-bottom: 2vw;
 }
 
+/* o botao-2 segue a mesma estrutura que o botao-1, apenas muda a cor da letra e da borda*/
 .botao-2 {
     background-color: transparent;
     color: black;
@@ -159,20 +183,21 @@ e width 100% para ocupar toda a largura da div */
     cursor: pointer;
 }
 
-.arrow-up-2{
+/* similar ao arrow-1, muda a posição e a cor do mesmo */
+.arrow-up-2 {
     position: absolute;
     bottom: 1vw;
     left: 1vw;
     width: 2vw;
     filter: none; /* mantém o ícone preto */
-    z-index: 1;
     cursor: pointer;
 }
 
-.row4{
+.row4 {
     position: relative;
 }
 
+/* o botao blog vai ficar centralizado na row4, com estrutura semelhante aos botoes 1 e 2 */
 .botao-blog {
     position: absolute;
     top: 50%;
@@ -186,18 +211,17 @@ e width 100% para ocupar toda a largura da div */
     cursor: pointer;
 }
 
+/* similar aos restantes arrow */
 .arrow-up-3 {
     position: absolute;
     bottom: 1vw;
     right: 1vw;
     width: 2vw;
-    filter: none; /* mantém o ícone preto */
-    z-index: 1;
+    filter: none; 
     cursor: pointer;
 }
 
-
- /*estilos do footer*/
+ /* rodapé: fundo preto, cor branca, fonte Jura, padding responsivo, elementos com direçao de coluna e centralizados*/
  .footer {
     background-color: black;
     color: white;
@@ -207,13 +231,14 @@ e width 100% para ocupar toda a largura da div */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vw; /* espaço entre os elementos */
+    gap: 2vw; 
     text-align: center;
 }
+
 /* estilos dos icons das redes sociais */
 .social-icons {
     display: flex;
-    gap: 1.5vw; /* espaço entre os ícones */
+    gap: 1.5vw; 
 
 }
 /* para fazer com que só no icon é que é clicavel, colocar o cursor pointer na imagem */
